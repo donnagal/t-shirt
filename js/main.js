@@ -129,7 +129,6 @@ $(function() {
 
 // Swiper
 var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 3,
   autoplay: {
     delay: 3500,
   },
@@ -141,4 +140,9 @@ var swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+  }
 }); 
