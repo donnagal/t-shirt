@@ -144,5 +144,8 @@ var swiper = new Swiper('.swiper-container', {
     640: {
       slidesPerView: 1,
     },
+    1024: {
+      slidesPerView: 3,
+    },
   }
 }); 

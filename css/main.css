@@ -290,8 +290,6 @@ nav.animate-add.active {
     color: black !important;
   }
   nav .slide-toggle {
-    transform: scale(0.8);
-    position: fixed;
     top: 0;
     left: 0;
     background: #fff;
