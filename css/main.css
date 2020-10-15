@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 *:focus {
-  outline: none;
+    outline: none;
 }
 @media (min-width: 576px) {
   .lg\:text-9xl {
@@ -30,6 +30,11 @@ body {
 
 .hide {
   display: none;
+}
+@media (max-width: 576px) {
+  .sm\:hide {
+    display: none;
+  }
 }
 
 [class^="trans-"] .trans, [class*=" trans-"] .trans {
