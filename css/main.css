@@ -176,7 +176,7 @@ button.scroll_down:before {
 }
 
 .bg-img-parallax {
-  background-image: url("https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  background-image: url("../img/t-rack.jpg");
   height: 40vh;
   background-attachment: fixed;
   background-position: center;
@@ -421,11 +421,32 @@ nav.animate-add.active {
 }
 
 /* Form */
+.cognito h1 {
+  font-size: 3rem !important;
+  font-weight: 100 !important;
+  margin-bottom: -15px !important;
+}
 .cognito .c-forms-form .c-label {
   margin-top: 20px;
 }
+[data-field="Contact"] {
+  margin-top: 90px !important;
+}
 [data-field="Colour"] span {
   display: none;
+}
+.c-repeating-section-item-title h4, .c-repeating-section-container:first-child .c-remove-item.c-icon-button {
+  display: none !important;
+}
+.cognito .c-forms-form .c-repeating-section-group > div:not(.c-table-row):nth-child(odd) {
+  background: white !important;
+  border: none !important;
+}
+.cognito #c-submit-button {
+  position: absolute;
+  min-width: 100%;
+  padding: 26px;
+  font-size: 22px;
 }
 
 /* Colour */
@@ -467,18 +488,12 @@ nav.animate-add.active {
   border: 2px solid #0075ff;
 }
 
-.c-repeating-section-container:first-child h4, .c-repeating-section-container:first-child .c-remove-item.c-icon-button {
-  display: none;
-}
-.cognito .c-forms-form .c-repeating-section-group > div:not(.c-table-row):nth-child(odd) {
-  background: white !important;
-}
 
 @media (min-width: 576px) {
   [data-field="Images"] { 
     position: absolute;
     left: 46%;
-    width: 76% !important;
+    width: 90% !important;
   }
 
   /* custom image badge */

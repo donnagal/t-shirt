@@ -31,7 +31,7 @@ $(function() {
       var attr = $(this).attr('data-image-src');
     
       if (typeof attr !== typeof undefined && attr !== false) {
-          $(this).css('background', 'url('+attr+') center bottom  / cover no-repeat');
+          $(this).css('background', 'url('+attr+') center  / cover no-repeat');
       }
     
     });
