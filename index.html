@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/aos@2.3.3/dist/aos.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
     <link href="css/main.css" rel="stylesheet">
 
     <script>
@@ -45,6 +46,7 @@
                     <li class="pt-3 nav-li"><a class="text-teal-lighter hover:text-white no-underline" href="#page-top">Home</a></li>
                     <li class="pt-3 nav-li"><a class="text-teal-lighter hover:text-white no-underline" href="#1">Shop T-Shirt</a></li>
                     <li class="pt-3 nav-li"><a class="text-teal-lighter hover:text-white no-underline" href="#2">Money raised</a></li>
+                    <li class="pt-3 nav-li"><a class="text-teal-lighter hover:text-white no-underline" href="#3">Photos</a></li>
                     <li class="pt-3 nav-li"><a class="text-teal-lighter hover:text-white no-underline" href="#footer">My Story <i class="fab fa-medium"></i></a></li>
                   </ul>
             </div>
@@ -137,7 +139,42 @@
               </div>
             </section>
     
+<section id="3" class="container mx-auto lg:pb-24">
 
+  <h3 class="lg:text-5xl font-serif text-black lg:pl-32">
+    Photos
+  </h3>
+
+  <div class="swiper-container">
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/snap-1.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/snap-2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/snap-3.jpg" />
+    </div>
+      <div class="swiper-slide">
+        <img src="img/snap-4.jpg" />
+    </div>
+    <div class="swiper-slide">
+        <img src="img/snap-5.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="img/snap-6.jpg" />
+  </div>
+
+ </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination swiper-pagination-black"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next swiper-button-black"></div>
+  <div class="swiper-button-prev swiper-button-black"></div>
+  </div>
+</section>
 
 
       <div id="footer">
@@ -145,18 +182,7 @@
               <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div class="lg:flex-grow">
                     <p class="text-2xl tracking-wide font-bold text-grey uppercase">T-Ribbon <i class="fas fa-tshirt"></i> project.</p>
-                    <p class="text-sm text-grey-darker">© 2020. All Rights Reserved.</p>
-                </div>
-                <div class="flex text-2xl pr-5 py-5">
-                  <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                  <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white">
-                      <i class="fab fa-instagram"></i>
-                  </a>
+                    <p class="text-sm text-grey-darker pt-2">© 2020. All Rights Reserved.</p>
                 </div>
               </div>
             </footer>
@@ -165,7 +191,7 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.3/dist/aos.js"></script>
-
+    <script src="js/app/swiper-bundle.min.js"></script>
 
     <script src="js/main.js"></script>
     <script src="js/app/scrollmagic.js"></script>
