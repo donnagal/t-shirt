@@ -128,12 +128,29 @@ $(function() {
 
 // Tabs
 $(function() {
-  $('.tab-list ul li').click(function() {
-    $('.tab-list ul li').removeClass('active');
+
+  $('.cyle-1 .tab-list ul li').click(function() {
+    $('.cyle-1 .tab-list ul li').removeClass('active');
     $(this).addClass('active');
-    $('.tab-body .tab-body-content').hide();
+    $('.cyle-1 .tab-body .tab-body-content').hide();
     var tab = $(this).data('tab');
-    $('.tab-body .tab-body-content[data-tabcontent=' + tab + ']').show();
+    $('.cyle-1 .tab-body .tab-body-content[data-tabcontent=' + tab + ']').show();
+  });
+
+  $('.cyle-2 .tab-list ul li').click(function() {
+    $('.cyle-2 .tab-list ul li').removeClass('active');
+    $(this).addClass('active');
+    $('.cyle-2 .tab-body .tab-body-content').hide();
+    var tab = $(this).data('tab');
+    $('.cyle-2 .tab-body .tab-body-content[data-tabcontent=' + tab + ']').show();
+  });
+
+  $('.cyle-3 .tab-list ul li').click(function() {
+    $('.cyle-3 .tab-list ul li').removeClass('active');
+    $(this).addClass('active');
+    $('.cyle-3 .tab-body .tab-body-content').hide();
+    var tab = $(this).data('tab');
+    $('.cyle-3 .tab-body .tab-body-content[data-tabcontent=' + tab + ']').show();
   });
   
 });
