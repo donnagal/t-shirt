@@ -126,6 +126,17 @@ $(function() {
   btnScrollDown.addEventListener('click', scrollDown);
 })();
 
+// Tabs
+$(function() {
+  $('.tab-list ul li').click(function() {
+    $('.tab-list ul li').removeClass('active');
+    $(this).addClass('active');
+    $('.tab-body .tab-body-content').hide();
+    var tab = $(this).data('tab');
+    $('.tab-body .tab-body-content[data-tabcontent=' + tab + ']').show();
+  });
+  
+});
 
 // Swiper
 var swiper = new Swiper('.swiper-container', {
