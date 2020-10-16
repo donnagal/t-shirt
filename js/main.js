@@ -152,6 +152,14 @@ $(function() {
     var tab = $(this).data('tab');
     $('.cyle-3 .tab-body .tab-body-content[data-tabcontent=' + tab + ']').show();
   });
+
+  $('.cyle-4 .tab-list ul li').click(function() {
+    $('.cyle-4 .tab-list ul li').removeClass('active');
+    $(this).addClass('active');
+    $('.cyle-4 .tab-body .tab-body-content').hide();
+    var tab = $(this).data('tab');
+    $('.cyle-4 .tab-body .tab-body-content[data-tabcontent=' + tab + ']').show();
+  });
   
 });
 
