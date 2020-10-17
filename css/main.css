@@ -347,8 +347,9 @@ nav.animate-add.active {
 }
 .cognito #c-submit-button {
   position: absolute;
-  min-width: 100%;
-  padding: 26px;
+  min-width: 96%;
+  width: 90%;
+  padding: 20px;
   font-size: 22px;
 }
 
@@ -428,9 +429,12 @@ nav.animate-add.active {
   left: 272px;
   opacity: 0.7;
   }
-
   .cognito.c-sml .c-editor .c-choice-option {
     width: auto !important;
+  }
+  [data-field="Contact"] {
+    padding: 0 20px;
+
   }
 }
 
