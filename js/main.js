@@ -126,42 +126,6 @@ $(function() {
   btnScrollDown.addEventListener('click', scrollDown);
 })();
 
-// Tabs
-$(function() {
-
-  $('.cyle-1 .tab-list ul li').click(function() {
-    $('.cyle-1 .tab-list ul li').removeClass('active');
-    $(this).addClass('active');
-    $('.cyle-1 .tab-body .tab-body-content').hide();
-    var tab = $(this).data('tab');
-    $('.cyle-1 .tab-body .tab-body-content[data-tabcontent=' + tab + ']').show();
-  });
-
-  $('.cyle-2 .tab-list ul li').click(function() {
-    $('.cyle-2 .tab-list ul li').removeClass('active');
-    $(this).addClass('active');
-    $('.cyle-2 .tab-body .tab-body-content').hide();
-    var tab = $(this).data('tab');
-    $('.cyle-2 .tab-body .tab-body-content[data-tabcontent=' + tab + ']').show();
-  });
-
-  $('.cyle-3 .tab-list ul li').click(function() {
-    $('.cyle-3 .tab-list ul li').removeClass('active');
-    $(this).addClass('active');
-    $('.cyle-3 .tab-body .tab-body-content').hide();
-    var tab = $(this).data('tab');
-    $('.cyle-3 .tab-body .tab-body-content[data-tabcontent=' + tab + ']').show();
-  });
-
-  $('.cyle-4 .tab-list ul li').click(function() {
-    $('.cyle-4 .tab-list ul li').removeClass('active');
-    $(this).addClass('active');
-    $('.cyle-4 .tab-body .tab-body-content').hide();
-    var tab = $(this).data('tab');
-    $('.cyle-4 .tab-body .tab-body-content[data-tabcontent=' + tab + ']').show();
-  });
-  
-});
 
 // Swiper
 var swiper = new Swiper('.swiper-container', {
@@ -185,3 +149,26 @@ var swiper = new Swiper('.swiper-container', {
     },
   }
 }); 
+
+
+//accordion
+(function($) {
+  $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+
+  $('.accordion a').click(function(j) {
+      var dropDown = $(this).closest('li').find('p');
+
+      $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+
+      if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+      } else {
+          $(this).closest('.accordion').find('a.active').removeClass('active');
+          $(this).addClass('active');
+      }
+
+      dropDown.stop(false, true).slideToggle();
+
+      j.preventDefault();
+  });
+})(jQuery);
