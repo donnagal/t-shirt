@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/aos@2.3.3/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
     <link rel="stylesheet" href="../css/swiper-bundle.min.css">
 
     <link href="../css/main.css" rel="stylesheet">
@@ -431,34 +433,7 @@ data-image-src="../img/bg-hero-03.jpg">
             TBC
           </p>
       </div>
-
-            <div class="bg-teal-lighter w-full my-4 px-5 pb-10 nav-dark" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600"> 
-              <h3 class="lg:text-3xl font-serif text-black pt-10">
-                Recommendations:
-              </h3>
-              <p class="sm:mt-4 leading-loose">
-                <ul class="leading-loose">
-                  <li>Facebook community page: Lymphoma Down Under</li>
-                  <li>Workshop: Look Good, Feel Well</li> 
-                  <li>App: Momatu (A timeline app. It’s designed for baby updates, though you can use it for anything really. Having a timeline helps so much when reporting to doctors and nurses.) </li>
-                  <li>Health Hub: Patient Portal (Only available at some hospitals) </li>
-                  <li>TV Show: The Big C</li>
-                  <li>Instagram: cancer patient</li>
-                  <li>MOD cold press juicer</li> 
-                  <li>Juice recipe</li>
-                  <li>Book: ‘The Biology of Belief’ By Bruce H. Lipton</li>
-                  <li>Mixture of teas.</li>
-                  <li>Clove Oil (antimicrobial multipurpose for things like toothache, some itches and pimples)</li>   
-                  <li>Jojoba Oil (for scalp and skin care)</li>
-                  <li>GC Tooth Mousse (paste that helps to help neutralise acids. As soon as I saw discolour, I applied to the tooth as went away. Also help on ulcers)</li> 
-                  <li>Medication </li>
-                </ul>
-              </p>
-          </div>
-
-
-
-        </div>
+       </div>
     </div>
         
   </div>
@@ -656,6 +631,40 @@ data-image-src="../img/bg-hero-03.jpg">
 
 </section>
 
+<section id="8" class="container mx-auto pb-24 pt-10  nav-dark">
+  <h3 class="lg:text-5xl text-3xl font-serif text-black mb-8 lg:pl-32 pl-10">
+    Photos:
+  </h3>
+
+  <div class="container mx-auto lg:p-0 p-8">
+    <div class="flex flex-row flex-wrap -mx-2">
+      <div class="w-1/2 sm:w-1/4 h-32 md:h-64 mb-4 sm:mb-0 px-2">
+        <a class="block w-full h-full bg-grey-dark bg-no-repeat bg-center bg-cover" data-fancybox="gallery" href="../img/snap-1.jpg" title="photo" style="background-image: url(../img/snap-1.jpg);">
+        </a>
+      </div>
+      <div class="w-1/2 sm:w-1/4 h-32 md:h-64 mb-4 sm:mb-0 px-2">
+        <a class="block w-full h-full bg-grey-dark bg-no-repeat bg-center bg-cover" data-fancybox="gallery" href="../img/snap-3.jpg" title="photo" style="background-image: url(../img/snap-3.jpg);"> 
+        </a>
+      </div>
+      <div class="w-1/2 sm:w-1/4 h-32 md:h-64 mb-4 sm:mb-0 px-2">
+        <a class="block w-full h-full bg-grey-dark bg-no-repeat bg-center bg-cover" data-fancybox="gallery" href="../img/snap-6.jpg" title="photo" style="background-image: url(../img/snap-6.jpg);">
+           
+        </a>
+      </div>
+      <div class="w-1/2 sm:w-1/4 h-32 md:h-64 px-2">
+        <a class="block w-full h-full bg-grey-dark bg-no-repeat bg-center bg-cover text-white relative overlay overlay-hover no-underline " data-fancybox="gallery" href="../img/snap-2.jpg" title="photo" style="background-image: url(../img/snap-2.jpg);">
+          <p class="p-8 lg:p-24 text-white relative z-10 font-bold text-center">
+            <i class="fas fa-plus text-sm"></i> <i class="far fa-images text-3xl"></i>
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <a data-fancybox="gallery" href="../img/snap-4.jpg"></a>
+
+</section>
+
 
       <div id="footer">
           <footer  class="flex items-center justify-between flex-wrap bg-black p-6">
@@ -681,6 +690,9 @@ data-image-src="../img/bg-hero-03.jpg">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
     <script>AOS.init();</script>
 
     <script>
@@ -700,7 +712,7 @@ data-image-src="../img/bg-hero-03.jpg">
               slidesPerView: 2.5,
             },
             1024: {
-              slidesPerView: 5,
+              slidesPerView: 4,
             },
           }
         }); 

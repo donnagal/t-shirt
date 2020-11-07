@@ -175,7 +175,7 @@ button.scroll_down:before {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.32);
+  background:rgba(0, 0, 0, 0.40);
   transition: all 1s ease;
   animation-delay: 3s;
   z-index: 0;
@@ -187,7 +187,7 @@ button.scroll_down:before {
 
 .overlay.overlay-hover:hover:after {
   content: '';
-  background: rgba(0, 0, 0, 0.62);
+  background: rgba(0, 0, 0, 0.32);
   transition: all .5s ease;
 }
 
