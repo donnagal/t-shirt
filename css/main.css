@@ -395,7 +395,7 @@ nav.animate-add.active {
 
 @media (min-width: 576px) {
   .cognito h1 {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
     font-weight: 100 !important;
     margin-bottom: -15px !important;
   }
