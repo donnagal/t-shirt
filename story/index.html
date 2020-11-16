@@ -37,9 +37,11 @@
       .photo img{
         cursor: zoom-in
       }
-      .photo img:hover {
-        opacity: 0.6;
-        transition: 0.3s;
+      @media (min-width: 576px) {
+        .photo img:hover {
+          opacity: 0.6;
+          transition: 0.3s;
+        }
       }
       .photo-full {
         position: fixed;
@@ -74,7 +76,7 @@
         left: 0;
         z-index: 2;
         display: block;
-        background: #ffffffde;
+        background: white;
         color: white;
         text-align: center;
       }
