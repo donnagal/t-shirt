@@ -516,7 +516,7 @@ nav.animate-add.active {
   right: 10px;
   content: " ";
   top: 17px;
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -529,8 +529,70 @@ nav.animate-add.active {
 }
 
 a.active:after {
-  transform: rotate(45deg);
+  transform: rotate(-133deg);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+.tline::before,
+.tline::after {
+  display: inline-block;
+  content: "";
+  border-top: 2px solid #e3342f;
+  width: 6rem;
+  transform: translateY(-1rem);
+  top: 16px;
+  position: relative;
+}
+.photo img{
+  cursor: zoom-in
+}
+@media (min-width: 576px) {
+  .photo img:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+}
+.photo-full {
+  position: fixed;
+  width: 400px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  margin: auto;
+}
+.photo .close-bg, .photo .close-i {
+  display: none;
+}
+.photo .close-i.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 40px;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .photo .close-i.active {
+    top: 75%;
+  }
+}
+.photo .close-bg.active {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  background: white;
+  color: white;
+  text-align: center;
 }
