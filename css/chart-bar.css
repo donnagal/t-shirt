@@ -78,6 +78,7 @@
 
 .chart--horiz {
   overflow: hidden;
+  margin-left: -40px;
 }
 
 .chart__bar {
