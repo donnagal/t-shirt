@@ -3,13 +3,19 @@
 
   <head>
 
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, initial-scale=1, viewport-fit=cover">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <link href="../img/favicon.png" rel="icon" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="My Story My journey with Hodgkin Lymphoma">
+    <meta name="author" content="Donna Galletta">
+
+    <meta property="og:title" content="My Story My journey with Hodgkin Lymphoma">
+    <meta property="og:description" content="I'm not sick but i'm not well. I’m 31-years-old and I have been diagnosed Hodgkin Lymphoma (yes, the same one as Delta Goodrem had)...">
+    <meta property="og:image" content="https://t-ribbon-project.netlify.app/img/og_story.jpg">
+    <meta property="og:url" content="https://t-ribbon-project.netlify.app/story/">
+
+    <link href="../img/favicon.png" rel="icon" type="image/x-icon" />
   
-      <title>My Story.</title>
+    <title>My Story.</title>
       
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@0.6.6/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -810,20 +816,32 @@
 </section>
 
 <section id="app" class="container mx-auto pb-24 pt-10  nav-dark">
-
   <h3 id="8" class="lg:text-5xl text-3xl font-serif text-black mb-8 lg:pl-32 pl-10">
     Photos:
   </h3>
   <div class="flex flex-wrap">
-    <div class="photo">
-      <div class="close-bg"></div>
-      <img class="lg:w-32 w-1/3 p-1"  v-for="i in range(1,64)"
-      :src="'../img/story/gallery/' + i + '.jpg' "/> 
-      <div class="close-i"><i class="fas fa-times text-5xl text-red"></i></div>
-    </div>
+    <a class="lg:w-32 w-1/3 p-1"  v-for="i in range(1,64)" data-fancybox="gallery" :href="'../img/story/gallery/' + i + '.jpg'">
+        <img :src="'../img/story/gallery/' + i + '.jpg'">
+    </a>
   </div>
+</section>
 
 
+<section  class="p-8 nav-dark" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
+  <div class="container mx-auto lg:px-32 pb-24">
+
+      <div class="flex flex-wrap text-grey-darker">
+          <div class="mr-auto">
+            <h3 class="lg:text-5xl text-3xl font-serif text-black mb-8">
+              Charity Events
+            </h3>
+            <a href="events/" class="inline-block bg-teal-lighter hover:bg-teal-light rounded-full px-8 py-2 text-sm text-center  font-semibold text-red mr-2 mb-2 no-underline">
+              Read →
+            </a>
+          </div>
+        </div>
+
+  </div>
 </section>
 
 
@@ -847,6 +865,11 @@
 
     <script src="../js/main.js"></script>
     <script src="../js/app/scrollmagic.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 
       <!-- ScrollMagic -->
