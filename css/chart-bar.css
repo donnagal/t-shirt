@@ -84,12 +84,14 @@
 .chart__bar {
   height: 30px;
   margin-bottom: 10px;
-  background: linear-gradient(to left, #a0f0ed, #5bbdb7);
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   opacity: 0;
   animation: 3s anim-lightspeed-in ease forwards;
 }
+.bg-green-grad {  background: linear-gradient(to left, #a0f0ed, #5bbdb7); }
+.bg-purple-grad {  background: linear-gradient(to left, #c3a0f0, #965bbd); }
+
 .chart--dev .chart__bar:nth-of-type(13) {
   animation-delay: 3.1s;
 }
